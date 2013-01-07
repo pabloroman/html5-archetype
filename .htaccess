@@ -1,0 +1,29 @@
+<IfModule mod_rewrite.c>
+	Options +FollowSymLinks
+	RewriteEngine On
+</IfModule>
+
+<IfModule mod_headers.c>
+Header unset ETag
+</IfModule>
+
+FileETag None
+
+<FilesMatch "\\.(js|css|php|html|htm)$">
+	SetOutputFilter DEFLATE
+</FilesMatch>
+
+
+<FilesMatch "\\.(js|css|swf|pdf|flv|ttf|woff|eot|svg)$">
+	Header set Cache-Control "max-age=360000, public"
+</FilesMatch>
+
+<FilesMatch "\\.(html|htm)$">
+	Header set Cache-Control "public, max-age=3600, must-revalidate"
+</FilesMatch>
+
+<FilesMatch "\\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css)$">
+	Header unset Last-Modified
+	Header set Cache-Control "public, max-age=864000, must-revalidate"
+	ExpiresDefault "access plus 2 months"
+</FilesMatch>

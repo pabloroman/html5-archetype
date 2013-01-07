@@ -3,10 +3,11 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<title>HTML5 Archetype</title>
 	
 	<link rel="stylesheet" href="stylesheets/base.css" type="text/css" media="all" />
-	<link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,700' rel='stylesheet' type='text/css'>
 
 	<!--[if lt IE 9]>
@@ -23,53 +24,64 @@
 <body>
 	<header>
 		<div class="wrapper clearfix">
-			<a class="logo">HTML5 Archetype</a>
-			<nav></nav>
+			<span class="logo">HTML5 Archetype</span>
+			<nav>
+				<ul>
+					<li><a href="https://github.com/pabloroman/html5-archetype">Fork me on GitHub</a></li>
+					<li><a href="http://pabloroman.es">by Pablo Román</a></li>
+				</ul>
+			</nav>
 		</div>
 	</header>
 	
 	<section>
 		<div class="wrapper clearfix">
 			
-			<h1>Fluid width columns</h1>
-			<div class="row">
-				<section class="column half">1/2 column</section>
-				<section class="column half">1/2 column</section>
-			</div>
-			<div class="row">
-				<section class="column two-third">2/3 column</section>
-				<section class="column third">1/3 column</section>
-			</div>
-			<div class="row">
-				<section class="column third">1/3 column</section>
-				<section class="column third">1/3 column</section>
-				<section class="column third">1/3 column</section>
-			</div>
-			<div class="row">
-				<section class="column three-fourth">3/4 column</section>
-				<section class="column fourth">1/4 column</section>
+			<p class="double-size center"><strong>Archetype</strong> [/ˈɑrkɪtaɪp/]: An universally understood symbol, term, statement, or pattern of behavior, a prototype upon which others are copied, patterned, or emulated.</p>
+			
+			<p><strong>HTML5 Archetype</strong> is a <em>very</em> simple HTML5 framework. Some of its features are: responsiveness, a straightforward fluid column grid and great typography</p>
+			<hr />
+			<h2>Fluid width columns</h2>
+			<div id="column-example">
+				<div class="row">
+					<section class="column half">1/2 column</section>
+					<section class="column half">1/2 column</section>
+				</div>
+				<div class="row">
+					<section class="column two-third">2/3 column</section>
+					<section class="column third">1/3 column</section>
+				</div>
+				<div class="row">
+					<section class="column third">1/3 column</section>
+					<section class="column third">1/3 column</section>
+					<section class="column third">1/3 column</section>
+				</div>
+				<div class="row">
+					<section class="column three-fourth">3/4 column</section>
+					<section class="column fourth">1/4 column</section>
+				</div>	
+				<div class="row">
+					<section class="column fourth">1/4 column</section>
+					<section class="column fourth">1/4 column</section>
+					<section class="column fourth">1/4 column</section>
+					<section class="column fourth">1/4 column</section>
+				</div>
+				<div class="row">
+					<section class="column fifth">1/5 column</section>
+					<section class="column fifth">1/5 column</section>
+					<section class="column fifth">1/5 column</section>
+					<section class="column fifth">1/5 column</section>
+					<section class="column fifth">1/5 column</section>
+				</div>
+				<div class="row">
+					<section class="column sixth">1/6 column</section>
+					<section class="column sixth">1/6 column</section>
+					<section class="column sixth">1/6 column</section>
+					<section class="column sixth">1/6 column</section>
+					<section class="column sixth">1/6 column</section>
+					<section class="column sixth">1/6 column</section>
+				</div>
 			</div>	
-			<div class="row">
-				<section class="column fourth">1/4 column</section>
-				<section class="column fourth">1/4 column</section>
-				<section class="column fourth">1/4 column</section>
-				<section class="column fourth">1/4 column</section>
-			</div>
-			<div class="row">
-				<section class="column fifth">1/5 column</section>
-				<section class="column fifth">1/5 column</section>
-				<section class="column fifth">1/5 column</section>
-				<section class="column fifth">1/5 column</section>
-				<section class="column fifth">1/5 column</section>
-			</div>
-			<div class="row">
-				<section class="column sixth">1/6 column</section>
-				<section class="column sixth">1/6 column</section>
-				<section class="column sixth">1/6 column</section>
-				<section class="column sixth">1/6 column</section>
-				<section class="column sixth">1/6 column</section>
-				<section class="column sixth">1/6 column</section>
-			</div>		
 			<hr />
 			
 			<h2>Block of text</h2>
@@ -78,9 +90,35 @@
 <p>Praesent vulputate facilisis arcu a elementum. Pellentesque condimentum posuere erat, eu lobortis magna ornare eu. Vestibulum elit est, egestas quis interdum et, suscipit ut est. Aliquam sed mi ut enim luctus hendrerit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec ut magna ut justo viverra malesuada. Nam nisi sapien, auctor ut sagittis in, fringilla ac augue.</p>
 
 <p>Etiam risus ipsum, posuere sagittis commodo vel, elementum vel est. Maecenas ornare, tortor et laoreet gravida, arcu tellus auctor nisl, a interdum libero urna at dui. Etiam ut odio augue. Quisque eu dignissim leo. Proin ut blandit mi. Donec vitae odio velit. Vestibulum non orci quam. Aenean id odio orci, scelerisque eleifend nisi. Nam ultrices egestas vestibulum. Proin varius ligula vitae odio ornare vulputate at nec lorem. Nam non neque iaculis risus gravida blandit id id lectus. Vivamus eu lacinia felis. Aliquam bibendum ante vitae nibh pharetra molestie euismod nunc imperdiet. Mauris at nisl justo.</p>
+		
+			<hr />
+			
+			<h2>Forms and buttons</h2>
+			<div class="row">
+				<section class="column two-third">
+				<form>
+					<fieldset>
+						<p>
+							<label for="name">Your name</label>
+							<input type="text" name="name" />
+						</p>
+						<p>
+							<label for="email">Your e-mail</label>
+							<input type="text" name="email" />
+						</p>
+						<p>
+							<label for="message">Your message</label>
+							<textarea name="message"></textarea>
+						</p>							
+					</fieldset>
+					<input type="submit" value="Send" />
+				</form>
+				</section>
+				<section class="column third">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec diam non dolor congue imperdiet. In neque metus, suscipit non iaculis ut, iaculis sed quam. Morbi in nibh vitae augue tincidunt fringilla nec viverra mi. Mauris eget malesuada ipsum. Fusce pellentesque, turpis</p>
+				</section>
+			</div>
 		</div>
-		
-		
 	</section>
 	
 	<footer>

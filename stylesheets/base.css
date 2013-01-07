@@ -29,6 +29,7 @@ img, object, embed { max-width: 100%; }
 .row:after, .clearfix:after { clear: both; }
 .row, .clearfix { zoom: 1; }
 .center { text-align: center; margin-left: auto; margin-right: auto; }
+.double-size { font-size: 200%; }
 
 /* =Columns
 -------------------------------------------------------------- */
@@ -65,25 +66,37 @@ em { font-style: italic; }
 pre, code { font-family: Monaco, "Courier New", monospace; font-size: 80%; overflow: scroll; }
 input, textarea { font-family: "Helvetica", Arial, sans-serif; }
 
-
 /* =Layout
 -------------------------------------------------------------- */
 body { margin: 0; font-family: "Merriweather", Georgia, serif; font-size: 1em; font-weight: 400; line-height: 1.8; text-rendering: optimizeLegibility; color: #7C7A77; background: #FAF7F2; }
 section { padding: 2em 0; }
 .wrapper { width: 90%; max-width: 960px; margin: 0px auto; position: relative; }
+nav { float: right; }
+nav li { display: inline-block; }
+nav li a { display: block; padding: 0 0.625em; }
 
-
-/* =Example (Remove this
+/* =Buttons
 -------------------------------------------------------------- */
-.column { background: #E6E2DD; text-align: center; margin-bottom: 2em; padding: 1em 0; }
-header { background: #fff; box-shadow: 0 2px 2px rgba(0,0,0,0.2); height: 3em; line-height: 3em; }
-header .logo { font-family: "Lato", Helvetica, Arial, sans-serif; font-weight: 700; text-transform: uppercase; }
+form label { line-height: 2em; font-size: 1.125em; }
+input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea { font-size: 1.125em; width: 100%; font-family: inherit; font-weight: 700; padding: 0.5em; line-height: 1.4em; text-align: left; -webkit-appearance: none; border: 1px solid #dcdcdc; }
+
+form input[type="submit"], form button, a.button { font-size: 1.375em; display: inline-block; border: 0; font-weight: 700; padding: 0.5em 1em; font-family: inherit; -webkit-appearance: none; border-radius: 5px; margin-bottom: 0.5em; position: relative; color: #fff; background: #EF4423; box-shadow: 0 5px 0 #940707; }
+form input[type="submit"]:active, form button:active, a.button:active { box-shadow: 0 3px 0 #940707; top: 2px; }
+
+
+/* =Example (Remove this)
+-------------------------------------------------------------- */
+#column-example .column { background: #E6E2DD; text-align: center; margin-bottom: 2em; padding: 1em 0; }
+header { background: #fff; box-shadow: 0 2px 2px rgba(0,0,0,0.2); height: 3em; line-height: 3em; font-family: "Lato", Helvetica, Arial, sans-serif; }
+header .logo { font-size: 1em; line-height: 1em; font-weight: 700; text-transform: uppercase; }
 .colophon { text-align: center; color: #BBB8B4; font-style: italic; font-size: 0.75em; }
+footer { background: #E6E2DD; padding: 2em 0; }
 
 /* =Media queries
 -------------------------------------------------------------- */
 @media screen and (max-width: 700px) and (min-width: 0) {
 	.column { float: none; width: 100%; margin-right: 0; }
+	.double-size { font-size: 150%; }
 }
 
 

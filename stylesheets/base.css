@@ -83,6 +83,14 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
 form input[type="submit"], form button, a.button { font-size: 1.375em; display: inline-block; border: 0; font-weight: 700; padding: 0.5em 1em; font-family: inherit; -webkit-appearance: none; border-radius: 5px; margin-bottom: 0.5em; position: relative; color: #fff; background: #EF4423; box-shadow: 0 5px 0 #940707; }
 form input[type="submit"]:active, form button:active, a.button:active { box-shadow: 0 3px 0 #940707; top: 2px; }
 
+/* =Icons
+-------------------------------------------------------------- */
+/* This triggers a redraw in IE to Fix IE8's :before content rendering. */
+html:hover [class^="icon-"] { -ms-zoom: 1; }
+i { font-style: normal; text-transform: none; }
+i[class^="icon-"]::before, i[class*=" icon-"]:before { font-family: ''; font-weight: normal; font-style: normal; display: inline-block; text-decoration: none; font-variant: normal; }
+a [class^="icon-"], a [class*=" icon-"] { display: inline-block; text-decoration: inherit; }
+
 
 /* =Example (Remove this)
 -------------------------------------------------------------- */

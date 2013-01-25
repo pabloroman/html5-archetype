@@ -63,7 +63,7 @@ p a { text-decoration: underline; }
 small { font-size: 0.750em; }
 strong { font-weight: 700; }
 em { font-style: italic; }
-pre, code { font-family: Monaco, "Courier New", monospace; font-size: 80%; overflow: scroll; }
+pre, code { font-family: Monaco, "Courier New", monospace; font-size: 85%; }
 input, textarea { font-family: "Helvetica", Arial, sans-serif; }
 
 /* =Layout
@@ -85,11 +85,29 @@ form input[type="submit"]:active, form button:active, a.button:active { box-shad
 
 /* =Icons
 -------------------------------------------------------------- */
+@font-face {
+	font-family: 'archetype';
+	src:url('../fonts/archetype.eot');
+	src:url('../fonts/archetype.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/archetype.svg#archetype') format('svg'),
+		url('../fonts/archetype.woff') format('woff'),
+		url('../fonts/archetype.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
 /* This triggers a redraw in IE to Fix IE8's :before content rendering. */
 html:hover [class^="icon-"] { -ms-zoom: 1; }
 i { font-style: normal; text-transform: none; }
-i[class^="icon-"]::before, i[class*=" icon-"]:before { font-family: ''; font-weight: normal; font-style: normal; display: inline-block; text-decoration: none; font-variant: normal; }
+i[class^="icon-"]::before, i[class*=" icon-"]:before { font-family: 'archetype'; font-weight: normal; font-style: normal; display: inline-block; text-decoration: none; font-variant: normal; }
 a [class^="icon-"], a [class*=" icon-"] { display: inline-block; text-decoration: inherit; }
+.icon-mail:before { content: "\e000"; }
+.icon-rss:before { content: "\e001"; }
+.icon-facebook:before { content: "\e002"; }
+.icon-twitter:before { content: "\e003"; }
+.icon-like:before { content: "\e004"; }
+.icon-linkedin:before { content: "\e006"; }
+
 
 
 /* =Example (Remove this)
@@ -99,6 +117,8 @@ header { background: #fff; box-shadow: 0 2px 2px rgba(0,0,0,0.2); height: 3em; l
 header .logo { float: left; font-size: 1em; font-weight: 700; text-transform: uppercase; }
 .colophon { text-align: center; color: #BBB8B4; font-style: italic; font-size: 0.75em; }
 footer { background: #E6E2DD; padding: 2em 0; }
+#feature-icons .column { text-align: center; }
+#feature-icons i[class^="icon-"] { font-size: 5em; line-height: 1em; }
 
 /* =Media queries
 -------------------------------------------------------------- */

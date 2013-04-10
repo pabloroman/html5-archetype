@@ -7,8 +7,7 @@
 	<title>HTML5 Archetype</title>
 	
 	<link rel="stylesheet" href="stylesheets/base.css" type="text/css" media="all">
-	<link href='http://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Lato:300,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:300,700,400' rel='stylesheet' type='text/css'>
 
 	<!--[if lt IE 9]>
 	<script src="scripts/html5shiv.js"></script>
@@ -124,18 +123,14 @@
 					<h2>Forms and buttons</h2>
 					<form>
 						<fieldset>
-							<p>
+							<div class="row">
 								<label for="name">Your name</label>
-								<input type="text" name="name">
-							</p>
-							<p>
-								<label for="email">Your e-mail</label>
-								<input type="text" name="email">
-							</p>
-							<p>
+								<input type="text" id="name" name="name">
+							</div>
+							<div class="row">
 								<label for="message">Your message</label>
-								<textarea name="message"></textarea>
-							</p>							
+								<textarea name="message" id="message" rows="4"></textarea>
+							</div>						
 						</fieldset>
 						<input type="submit" value="Send">
 					</form>
@@ -143,6 +138,46 @@
 				
 				<section class="column third">
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec diam non dolor congue imperdiet. In neque metus, suscipit non iaculis ut, iaculis sed quam. Morbi in nibh vitae augue tincidunt fringilla nec viverra mi. Mauris eget malesuada ipsum. Fusce pellentesque, turpis</p>
+				</section>
+			</div>
+			
+			<hr>
+			
+			<div class="row">
+				<section class="column third">
+					<h2>Inline fields</h2>
+					<form>
+						<fieldset>
+							<div class="row">
+								<label for="username" class="infield">Username</label>
+								<input type="text" id="username" name="username" placeholder="username">
+							</div>
+							<div class="row">
+								<label for="password" class="infield">Password</label>
+								<input type="password" id="password" name="password" placeholder="password">
+							</div>
+						</fieldset>
+						<input type="submit" class="button-wide" value="Log in">
+					</form>
+				</section>
+				
+				<section class="column third">
+					<h2>Form elements</h2>
+					<form>
+						<fieldset>
+							<div class="row">
+								<label for="newsletter" class="checkbox"><input type="checkbox" id="newsletter" name="newsletter">Subscribe to the newsletter</label>
+							</div>
+							<div class="row">
+								<label>Are you awesome?</label>
+								<label for="awesome-sure" class="radio"><input type="radio" id="awesome-sure" name="awesome">For sure</label>
+								<label for="awesome-yes" class="radio"><input type="radio" id="awesome-yes" name="awesome">Hell yes!</label>
+							</div>
+						</fieldset>
+					</form>
+				</section>
+				
+				<section>
 				</section>
 			</div>
 		</div>

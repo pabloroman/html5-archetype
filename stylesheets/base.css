@@ -45,7 +45,7 @@ img, object, embed { max-width: 100%; }
 
 /* =Headlines and text
 -------------------------------------------------------------- */
-h1, h2, h3, h4, h5, h6 { font-family: "Lato", Helvetica, Arial, sans-serif; font-weight: 300; line-height: 1.2; text-transform: uppercase; color: #363530; }
+h1, h2, h3, h4, h5, h6 { font-family: "Merriweather Sans", Helvetica, Arial, sans-serif; font-weight: 300; line-height: 1.2; text-transform: uppercase; color: #363530; }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, p a { font-weight: inherit; font-style: inherit; }
 
 h1 { font-size: 2.25em; letter-spacing: -1px; margin-bottom: 0.5em; }
@@ -64,24 +64,43 @@ small { font-size: 0.750em; }
 strong { font-weight: 700; }
 em { font-style: italic; }
 pre, code { font-family: Monaco, "Courier New", monospace; font-size: 85%; }
-input, textarea { font-family: "Helvetica", Arial, sans-serif; }
 
 /* =Layout
 -------------------------------------------------------------- */
-body { margin: 0; font-family: "Merriweather", Georgia, serif; font-size: 1em; font-weight: 400; line-height: 1.8; text-rendering: optimizeLegibility; color: #7C7A77; background: #FAF7F2; }
+body { margin: 0; font-family: "Merriweather Sans", Helvetica, Arial, sans-serif; font-size: 1em; font-weight: 400; line-height: 1.8; text-rendering: optimizeLegibility; color: #7C7A77; background: #FAF7F2; }
 section { padding: 2em 0; }
 .wrapper { width: 90%; max-width: 960px; margin: 0px auto; position: relative; }
 nav { float: right; }
 nav li { display: inline-block; }
 nav li a { display: block; padding: 0 0.625em; }
 
-/* =Buttons
+/* =Forms and Buttons
 -------------------------------------------------------------- */
-form label { line-height: 2em; font-size: 1.125em; }
+form .row { margin-bottom: 1em; }
+form label { line-height: 2em; font-size: 1.125em; display: block; position: relative; }
+form label.infield { opacity: 0; position: absolute; }
+form label.radio, form label.checkbox { font-weight: 300; font-size: 1em; color: #7C7A77; }
+
+input, textarea { font-size: 1.125em; width: 100%; font-family: inherit; font-weight: 400; padding: 0.5em; line-height: 1.4em; text-align: left; resize: none; outline: none; -webkit-appearance: none; -moz-appearance: none; border: 1px solid #dbdbdb; background: #fff; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
+input:focus, textarea:focus { border-color: #cbcac7; color: #303030; background-color: #fff;
+-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset,0 0 6px rgba(0, 0, 0, 0.08);
+-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.05) inset,0 0 6px rgba(0,0,0,0.08);
+box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset,0 0 6px rgba(0, 0, 0, 0.08); }
+
+::-webkit-input-placeholder { color: #c9c9c9; font-weight: 400; }
+:-moz-placeholder { color: #c9c9c9; }
+::-moz-placeholder { color: #c9c9c9; }
+:-ms-input-placeholder { color: #c9c9c9; }
+
+form input[type="checkbox"] { -webkit-appearance: checkbox; width: auto; margin-right: 0.5em; }
+form input[type="radio"] { -webkit-appearance: radio; width: auto; margin-right: 0.5em; }
+
 input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea { font-size: 1.125em; width: 100%; font-family: inherit; font-weight: 700; padding: 0.5em; line-height: 1.4em; text-align: left; -webkit-appearance: none; border: 1px solid #dcdcdc; }
 
-form input[type="submit"], form button, a.button { font-size: 1.375em; display: inline-block; border: 0; font-weight: 700; padding: 0.5em 1em; font-family: inherit; -webkit-appearance: none; border-radius: 5px; margin-bottom: 0.5em; position: relative; color: #fff; background: #EF4423; box-shadow: 0 5px 0 #940707; }
+form input[type="submit"], form button, a.button { font-size: 1.25em; display: inline-block; border: 0; font-weight: 700; padding: 0.5em 1.25em; font-family: "Merriweather Sans", Helvetica, Arial, sans-serif; -webkit-appearance: none; border-radius: 5px; margin-bottom: 0.5em; position: relative; color: #fff; background: #EF4423; box-shadow: 0 5px 0 #940707; width: auto; text-transform: uppercase; text-align: center; }
 form input[type="submit"]:active, form button:active, a.button:active { box-shadow: 0 3px 0 #940707; top: 2px; }
+
+form input.button-wide { width: 100%; }
 
 /* =Icons
 -------------------------------------------------------------- */
@@ -113,7 +132,7 @@ a [class^="icon-"], a [class*=" icon-"] { display: inline-block; text-decoration
 /* =Example (Remove this)
 -------------------------------------------------------------- */
 #column-example .column { background: #E6E2DD; text-align: center; margin-bottom: 2em; padding: 1em 0; }
-header { background: #fff; box-shadow: 0 2px 2px rgba(0,0,0,0.2); height: 3em; line-height: 3em; font-family: "Lato", Helvetica, Arial, sans-serif; }
+header { background: #fff; box-shadow: 0 2px 2px rgba(0,0,0,0.2); height: 3em; line-height: 3em; font-family: "Merriweather Sans", Helvetica, Arial, sans-serif; }
 header .logo { float: left; font-size: 1em; font-weight: 700; text-transform: uppercase; }
 .colophon { text-align: center; color: #BBB8B4; font-style: italic; font-size: 0.75em; }
 footer { background: #E6E2DD; padding: 2em 0; }

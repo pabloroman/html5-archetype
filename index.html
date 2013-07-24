@@ -7,7 +7,7 @@
 	<title>HTML5 Archetype</title>
 	
 	<link rel="stylesheet" href="stylesheets/base.css" type="text/css" media="all">
-	<link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:300,700,400' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
 
 	<!--[if lt IE 9]>
 	<script src="scripts/html5shiv.js"></script>
@@ -26,8 +26,9 @@
 			<span class="logo">HTML5 Archetype</span>
 			<nav>
 				<ul>
-					<li><a href="https://github.com/pabloroman/html5-archetype">Fork me on GitHub</a></li>
-					<li><a href="http://pabloroman.es">by Pablo Román</a></li>
+					<li><a href="http://pabloroman.es">Created by Pablo Román</a></li>
+					<li><a class="button" href="https://github.com/pabloroman/html5-archetype">Fork on GitHub</a></li>
+					
 				</ul>
 			</nav>
 		</div>
@@ -36,7 +37,7 @@
 	<section>
 		<div class="wrapper clearfix">
 			
-			<p class="double-size center"><strong>Archetype</strong> [/ˈɑrkɪtaɪp/]: An universally understood symbol, term, statement, or pattern of behavior, a prototype upon which others are copied, patterned, or emulated.</p>
+			<h1 class="center light"><strong>Archetype</strong>: An universally understood symbol, term, statement, or pattern of behavior, a prototype upon which others are copied, patterned, or emulated.</h1>
 			
 			<p><strong>HTML5 Archetype</strong> is a <em>very</em> simple HTML5 framework. Some of its features are: responsiveness, a straightforward fluid column grid and great typography. Read more about it (in Spanish) <a href="http://pabloroman.es/blog/archetype-una-plantilla-para-html5/">here</a>.</p>
 			<hr>
@@ -128,6 +129,13 @@
 								<input type="text" id="name" name="name">
 							</div>
 							<div class="row">
+								<label for="category" class="infield">Category</label>
+								<select name="category" id="category" class="selekt">
+									<option value="design">Design</option>
+									<option value="design">Development</option>
+								</select>
+							</div>
+							<div class="row">
 								<label for="message">Your message</label>
 								<textarea name="message" id="message" rows="4"></textarea>
 							</div>						
@@ -183,6 +191,17 @@
 		</div>
 	</section>
 	
+	<!-- Alt section -->
+	<section class="section-alt">
+		<div class="wrapper clearfix">		
+			<div class="row box padded">
+				<h2>This is a box</h2>
+				<p>It has text inside</p>
+			</div>
+		</div>
+	</section>
+	
+	<!-- Footer -->
 	<footer>
 		<div class="wrapper clearfix">
 			<section class="colophon">
@@ -192,7 +211,9 @@
 	</footer>
 </body>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/plugins.js"></script>
 <script>
 	// Google Analytics
 	var _gaq=[['_setAccount','UA-8049835-8'],['_setDomainName', 'pabloroman.es'],['_trackPageview']];

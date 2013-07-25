@@ -203,7 +203,7 @@
 			<h1>Here are some boxes</h1>	
 			<div class="row box padded">
 				<h2>This is a box</h2>
-				<p>It has text inside</p>
+				<p>It has text inside. It can open <a href="popup.html" data-toggle="modal" data-target="#modal">modals</a></p>
 			</div>
 			
 			<div class="row thumb-list">
@@ -249,6 +249,13 @@
 			</section>
 		</div>
 	</footer>
+	
+	<div id="modal" class="modal hide fade" tabindex="-1" role="dialog" aria-hidden="true">
+		<button type="button" class="model-close" data-dismiss="modal" aria-hidden="true">×</button>
+		<div class="modal-body">
+		</div>
+	</div>
+	
 </body>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>

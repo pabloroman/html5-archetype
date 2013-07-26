@@ -41,14 +41,15 @@ img, object, embed { max-width: 100%; }
 
 /* =Columns
 -------------------------------------------------------------- */
-.column { position: relative; float: left; margin-right: 4%; }
-.half { width: 48%; }
-.third { width: 30.66%; }
-.fourth { width: 22%; }
+.column { position: relative; float: left; margin-right: 3.125%; }
+.half { width: 48.43%; }
+.third { width: 31.25%; }
+.fourth { width: 22.65%; }
 .fifth { width: 16.8%; }
 .sixth { width: 13.33%; }
-.two-third { width: 65.33%; }
-.three-fourth { width: 74%; }
+.two-third { width: 65.625%; }
+.three-fourth { width: 74.2%; }
+.four-fifth { width: 80.075%; }
 .last, .column:last-child { margin-right: 0px; clear: right; }
 .column.center { margin: 0 auto; float: none; clear: both; }
 
@@ -83,6 +84,9 @@ body { margin: 0; font-family: "Open Sans", Helvetica, Arial, sans-serif; font-s
 section { padding: 2em 0; }
 aside { font-size: 0.875em; }
 .wrapper { width: 90%; max-width: 960px; margin: 0px auto; position: relative; }
+.wrapper-wide { width: 90%; max-width: 1140px; margin: 0px auto; position: relative; }
+.boxed-layout { padding: 0; }
+.boxed-layout .main { padding: 1em 1.5em; background: #fff; }
 nav { float: right; }
 nav li { float: left; font-size: 0.875em; margin-left: 0.625em; }
 nav li a { display: block; padding: 0 0.625em; }

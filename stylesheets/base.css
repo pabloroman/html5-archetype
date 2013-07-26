@@ -112,6 +112,15 @@ form input[type="radio"] { -webkit-appearance: radio; width: auto; margin-right:
 .thumb-list p { font-size: 0.875em; }
 .thumb-list hr { margin: 1em 0; }
 
+/* =Media
+-------------------------------------------------------------- */
+.media { border-bottom: 1px solid #E4E7E9; margin-bottom: 1em;  }
+.media h1, .media h2, .media h3 { line-height: 1; margin-bottom: 0.2em; }
+.media, .media-body { overflow: hidden; _overflow: visible; zoom: 1; }
+.media .media-image { float: left; margin-right: 1em; }
+.media .media-image img { display: block; }
+.media .imgExt { float: right; margin-left: 1em; }
+
 /* =Icons
 -------------------------------------------------------------- */
 @font-face {

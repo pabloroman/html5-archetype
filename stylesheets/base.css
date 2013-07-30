@@ -101,7 +101,8 @@ nav li.submenu:hover ul { display: block; }
 nav li.submenu ul { display: none; position: absolute; z-index: 99; background: #23292d; padding: 0.625em; }
 nav li.submenu ul li { float: none; line-height: 2.5; height: 2.5em; margin-right: 0.625em; }
 
-#nav-toggle { position: absolute; right: 0; display: none; }
+#nav-toggle { position: absolute; right: -1em; display: none; height: 2.5em; line-height: 2.5; top: 0.5em; padding: 0 0.75em; border-radius: 3px; }
+#nav-toggle:hover { background: #23292d; text-decoration: none; }
 
 /* =Forms and Buttons
 -------------------------------------------------------------- */
@@ -197,12 +198,14 @@ footer a:hover { color: #fff; }
 	.column { float: none; width: 100%; margin-right: 0; }
 	.double-size { font-size: 150%; }
 	#nav-toggle { display: block; color: #fff; }
-	nav { display: none; margin-left: -6%; position: absolute; width: 112%; margin-top: 3.5em; background: #F0F4F7; z-index: 1; }
-	nav li { display: block; float: none; border-bottom: 1px solid #E6E6E6; margin: 0; }
+	nav { margin-left: -6%; position: absolute; width: 112%; margin-top: 3.5em; background: #364046; z-index: 1; -webkit-transition: max-height 0.35s ease; -moz-transition: max-height 0.35s ease; -o-transition: max-height 0.35s ease; transition: max-height 0.35s ease; max-height: 0; overflow: hidden; }
+	nav.in { max-height: 480px; }
+	nav li { display: block; float: none; margin: 0; line-height: 3; }
 	nav li a { width: 90%; margin: 0px auto; padding: 0; }
-	nav li a:hover { color: #202529; }
+	nav li a:hover { color: #fff; }
 	nav li.submenu a { margin: 0px auto; }
 	nav li.submenu a:after { display: none; }
+	nav li a.button { margin-left: 5%; }
 }
 
 

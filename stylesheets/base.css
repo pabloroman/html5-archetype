@@ -136,31 +136,6 @@ form input[type="radio"] { -webkit-appearance: radio; width: auto; margin-right:
 .media .media-image img { display: block; }
 .media .imgExt { float: right; margin-left: 1em; }
 
-/* =Icons
--------------------------------------------------------------- */
-@font-face {
-	font-family: 'archetype';
-	src:url('../fonts/archetype.eot');
-	src:url('../fonts/archetype.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/archetype.svg#archetype') format('svg'),
-		url('../fonts/archetype.woff') format('woff'),
-		url('../fonts/archetype.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
-
-/* This triggers a redraw in IE to Fix IE8's :before content rendering. */
-html:hover [class^="icon-"] { -ms-zoom: 1; }
-i { font-style: normal; text-transform: none; }
-i[class^="icon-"]::before, i[class*=" icon-"]:before { font-family: 'archetype'; font-weight: normal; font-style: normal; display: inline-block; text-decoration: none; font-variant: normal; }
-a [class^="icon-"], a [class*=" icon-"] { display: inline-block; text-decoration: inherit; }
-.icon-mail:before { content: "\e000"; }
-.icon-rss:before { content: "\e001"; }
-.icon-facebook:before { content: "\e002"; }
-.icon-twitter:before { content: "\e003"; }
-.icon-like:before { content: "\e004"; }
-.icon-linkedin:before { content: "\e006"; }
-
 
 /* =JS Plugins
 -------------------------------------------------------------- */
@@ -222,7 +197,7 @@ footer a:hover { color: #fff; }
 	.column { float: none; width: 100%; margin-right: 0; }
 	.double-size { font-size: 150%; }
 	#nav-toggle { display: block; color: #fff; }
-	nav { margin-left: -6%; position: absolute; width: 112%; margin-top: 3.5em; background: #F0F4F7; z-index: 1; }
+	nav { display: none; margin-left: -6%; position: absolute; width: 112%; margin-top: 3.5em; background: #F0F4F7; z-index: 1; }
 	nav li { display: block; float: none; border-bottom: 1px solid #E6E6E6; margin: 0; }
 	nav li a { width: 90%; margin: 0px auto; padding: 0; }
 	nav li a:hover { color: #202529; }

@@ -45,8 +45,8 @@ img, object, embed { max-width: 100%; }
 .half { width: 48.43%; }
 .third { width: 31.25%; }
 .fourth { width: 22.65%; }
-.fifth { width: 16.8%; }
-.sixth { width: 13.33%; }
+.fifth { width: 17.5%; }
+.sixth { width: 14.06%; }
 .two-third { width: 65.625%; }
 .three-fourth { width: 74.2%; }
 .four-fifth { width: 80.075%; }
@@ -68,7 +68,7 @@ h6 { font-size: 0.875em; font-weight: normal; }
 
 p { margin-bottom: 1em; }
 
-a { text-decoration: none; color: #227DDA; font-weight: inherit; font-style: inherit; font-size: inherit; -webkit-transition: color 0.25s ease-in-out; -moz-transition: color 0.25s ease-in-out; -ms-transition: color 0.25s ease-in-out; -o-transition: color 0.25s ease-in-out; transition: color 0.25s ease-in-out; }
+a { text-decoration: none; color: #227DDA; font-weight: inherit; font-style: inherit; font-size: inherit; -webkit-transition: color 0.20s ease-in-out; -moz-transition: color 0.20s ease-in-out; -ms-transition: color 0.20s ease-in-out; -o-transition: color 0.20s ease-in-out; transition: color 0.20s ease-in-out; }
 a:hover { color: #1E6FC1; text-decoration: underline; }
 p a { text-decoration: underline; }
 small { font-size: 0.750em; }
@@ -91,13 +91,14 @@ aside { font-size: 0.875em; }
 /* =Navigation
 -------------------------------------------------------------- */
 nav { float: right; }
-nav li { float: left; font-size: 0.875em; margin-left: 0.625em; position: relative; }
-nav li a { display: block; padding: 0 0.625em; }
+nav li { float: left; font-size: 0.875em; position: relative; }
+nav li a { display: block; padding: 0 1.125em; white-space: nowrap; }
 nav li a.button { height: 2.25em; line-height: 1.25; }
-nav li.submenu > a { margin-right: 1.375em; }
-nav li.submenu > a:after { content:'▾'; display: block; position: absolute; right: 0.75em; top: 0; }
+nav li.submenu > a { padding-right: 2em; }
+nav li.submenu > a:after { content:'▾'; display: block; position: absolute; right: 0.875em; top: 0; }
+nav li.submenu:hover > a { background: #23292d; color: #fff; }
 nav li.submenu:hover ul { display: block; }
-nav li.submenu ul { display: none; position: absolute; z-index: 99; background: #364046; }
+nav li.submenu ul { display: none; position: absolute; z-index: 99; background: #23292d; padding: 0.625em; }
 nav li.submenu ul li { float: none; line-height: 2.5; height: 2.5em; margin-right: 0.625em; }
 
 #nav-toggle { position: absolute; right: 0; display: none; }

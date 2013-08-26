@@ -194,6 +194,15 @@ footer a:hover { color: #fff; }
 
 /* =Media queries
 -------------------------------------------------------------- */
+
+/* Responsive images */
+.hero { background-image: url('/assets/hero.jpg'); }
+@media (-webkit-min-device-pixel-ratio: 1.75), (min-resolution: 168dpi) { .hero { background-image: url('/assets/hero.2x.jpg'; } }
+@media (min-width: 768px) { .hero { background-image: url('/assets/hero.medium.jpg'); } }
+@media (min-width: 1024px) { .hero { background-image: url('/assets/hero.large.jpg'); } }
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.75), (min-width: 768px) and (min-resolution: 168dpi) { .hero { background-image: url('/assets/hero.medium.2x.jpg'); } }
+@media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.75), (min-width: 1024px) and (min-resolution: 168dpi) { .hero { background-image: url('/assets/hero.large.2x.jpg'); } }
+
 @media screen and (max-width: 700px) and (min-width: 0) {
 	.column { float: none; width: 100%; margin-right: 0; }
 	.double-size { font-size: 150%; }
